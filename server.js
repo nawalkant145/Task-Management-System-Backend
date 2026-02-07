@@ -14,12 +14,14 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://task-management-system-j3xb.vercel.app"
+      "https://task-management-system-j3xb.vercel.app",
+      "https://task-management-system-3du9-7cqsjo3mz.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true
   })
 );
+
 app.use(express.json());
 
 // Connect to MongoDB
